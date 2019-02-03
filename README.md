@@ -1,2 +1,2 @@
-# jogoVelhaProlog
-exercicio do joga da velha de I.A feito em prolog
+# Prolog
+exercicio de I.A feito em prolog
