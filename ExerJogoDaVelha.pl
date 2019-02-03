@@ -1,0 +1,24 @@
+pos(1,1,nada).
+pos(1,2,nada).
+pos(1,3,cruz).
+pos(2,1,bola).
+pos(2,2,cruz).
+pos(2,3,bola).
+pos(3,1,cruz).
+pos(3,2,nada).
+pos(3,3,nada).
+win(z):-
+    z\=nada,
+    pos(X,Y1,Z),
+    pos(X,Y2,Z),
+    pos(X,Y3,Z),
+    Y1\=Y2,
+    Y2\=Y3.
+win(z):-
+    z\=nada,
+    pos(X1,Y,Z),
+    pos(X2,Y,Z),
+    pos(X3,Y,Z),
+    X1\=X2,
+    X2\=X3.
+
